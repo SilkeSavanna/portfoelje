@@ -1,0 +1,545 @@
+html {
+  background-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.button {
+  background-color: black;
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+
+.button a:hover {
+  color: black;
+}
+.button:hover {
+  background-color: white;
+  transition: 0.3s;
+}
+
+/*forside*/
+
+a {
+  color: white;
+  text-decoration: dotted;
+}
+
+/*om side*/
+
+.silke_1 {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50%;
+  width: 50%;
+}
+
+.silke_2 {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  width: 40%;
+}
+
+.silke_3 {
+  display: none;
+}
+
+.kompetencer {
+  color: white;
+  text-align: center;
+  font-weight: 200;
+  font-size: 30px;
+  margin-top: 20%;
+}
+
+ul {
+  text-decoration: none;
+  margin-top: 15%;
+  list-style-type: none;
+  margin-left: 25%;
+}
+
+li {
+  color: white;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 2%;
+}
+
+p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+.telefon,
+.mail {
+  width: auto;
+  margin-left: 80%;
+}
+
+hr {
+  color: white;
+  margin-top: 20%;
+  border: 2px dashed;
+  margin-bottom: 15%;
+}
+
+.mail_kontakt,
+.telefon_kontakt {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.logo {
+  width: auto;
+  margin-left: 40%;
+  margin-top: 5%;
+}
+
+.sprog {
+  display: none;
+}
+
+/*projekter side*/
+
+h1 {
+  color: white;
+  font-size: 160px;
+  font-family: Aldrich;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-weight: 300;
+  margin-left: 10%;
+  margin-top: 30%;
+}
+
+h2 {
+  color: white;
+  font-family: Inter;
+  font-weight: 100;
+  margin-left: 10%;
+  margin-top: 2%;
+  margin-bottom: 10%;
+}
+
+.projekt {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.video {
+  width: 89%;
+  margin-left: 5%;
+}
+
+.video1 {
+  width: 100%;
+}
+
+.desktop_h1 {
+  display: none;
+}
+
+/*web - underside*/
+.tekst {
+  font-family: Inter;
+  font-weight: 100;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.info {
+  font-size: 35px;
+  margin-left: 10%;
+  margin-bottom: 1%;
+}
+
+.web_projekt {
+  margin-right: 1%;
+  margin-top: 5%;
+  width: 80%;
+  margin-bottom: 10%;
+}
+
+.web {
+  margin-left: 3%;
+}
+
+ul {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.nav_projekter {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+/*this sucks*/
+
+.presentation {
+  font-size: 35px;
+  margin-left: 10%;
+  margin-bottom: 1%;
+}
+
+.thissucks {
+  margin-left: 3%;
+}
+
+/*videosite*/
+.video_site {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.artistsite {
+  font-size: 150px;
+  margin-left: 3%;
+}
+
+.emil {
+  margin-left: 10%;
+  margin-right: 20%;
+  width: 80%;
+  margin-bottom: 10%;
+}
+
+@media (min-width: 800px) {
+  nav {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 2%;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+
+  .a1 {
+    margin-right: 40%;
+  }
+
+  h1 {
+    color: white;
+    font-size: 80px;
+    font-family: Aldrich;
+    text-align: center;
+    margin-top: 10%;
+    font-weight: 300;
+    margin-left: 0;
+  }
+
+  p {
+    color: white;
+    margin-left: 20%;
+    margin-right: 30%;
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 20px;
+  }
+
+  h2 {
+    color: white;
+    font-size: 150px;
+    margin-left: 20%;
+    margin-top: 20%;
+    font-family: Al Tarikh;
+    font-weight: 100;
+  }
+
+  sup {
+    font-size: 70px;
+    font-weight: 50;
+    font-family: Dhurjati;
+  }
+
+  .overskrift {
+    color: white;
+    font-size: 100px;
+    font-family: Aldrich;
+    text-align: center;
+    margin-top: 10%;
+    font-weight: 300;
+    margin-left: 0;
+    margin-bottom: 3%;
+  }
+
+  /*Om side*/
+
+  ul {
+    text-decoration: none;
+    margin-top: 0%;
+    list-style-type: none;
+    margin-left: 20%;
+  }
+
+  li {
+    color: white;
+    font-family: Inter;
+    font-weight: 100;
+    margin-top: 0;
+  }
+
+  .silke_1 {
+    display: block;
+    position: relative;
+    margin-left: 10%;
+    margin-right: auto;
+    margin-top: 25%;
+    width: 20%;
+  }
+
+  .silke_2 {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 15%;
+  }
+
+  .silke_3 {
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    width: 25%;
+  }
+
+  .kompetencer {
+    color: white;
+    text-align: left;
+    font-weight: 200;
+    font-size: 30px;
+    margin-top: 20%;
+    margin-left: 30%;
+  }
+
+  .box1 {
+    width: 200px;
+    height: 40px;
+    border-style: solid;
+    border-color: white;
+    position: relative;
+  }
+
+  .box1::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .box2 {
+    width: 200px;
+    height: 40px;
+    border-style: solid;
+    border-color: white;
+    position: relative;
+  }
+
+  .box2::after {
+    content: "";
+    width: 80%;
+    height: 100%;
+    background-color: grey;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .box3 {
+    width: 200px;
+    height: 40px;
+    border-style: solid;
+    border-color: white;
+    position: relative;
+  }
+
+  .box3::after {
+    content: "";
+    width: 30%;
+    height: 100%;
+    background-color: grey;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .grid_om {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10%;
+  }
+
+  .grid_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .sprog {
+    display: block;
+    margin-left: 40%;
+    margin-top: 4%;
+  }
+
+  hr {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  footer {
+    display: flex;
+  }
+
+  .logo {
+    margin-left: 10%;
+    margin-top: 0;
+    margin-right: 25%;
+  }
+
+  .telefon {
+    margin-left: 75%;
+  }
+
+  /*Projekter side*/
+
+  .projekter_grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .projekter_h2 {
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 100;
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+
+  .mobilesite_h1 {
+    display: none;
+  }
+  .desktop_h1 {
+    display: block;
+    font-size: 120px;
+    margin-left: 0;
+  }
+
+  .video {
+    width: 450px;
+  }
+
+  .video1 {
+    object-fit: cover;
+    margin-left: 10%;
+    width: 80%;
+  }
+
+  /*projektsider*/
+
+  /*web-side*/
+  .info {
+    font-family: Inter;
+    font-size: 50px;
+    margin-bottom: 2%;
+    margin-top: 0;
+    margin-left: 20%;
+  }
+
+  .grid_web {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10%;
+  }
+
+  .web_projekt {
+    width: 580px;
+    height: auto;
+    margin-bottom: 25%;
+    margin-top: 0;
+  }
+
+  .tekst {
+    margin-right: 10%;
+    font-family: Inter;
+    font-weight: 100;
+    margin-left: 20%;
+  }
+
+  .nav_projekter {
+    margin-bottom: 5%;
+    margin-top: 7%;
+  }
+
+  /*This sucks*/
+  .presentation {
+    font-family: Inter;
+    font-size: 50px;
+    margin-bottom: 2%;
+    margin-top: 10%;
+    margin-left: 20%;
+  }
+
+  .button {
+    background-color: black;
+    margin-left: 20%;
+    margin-top: 5%;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 2px solid white;
+  }
+
+  .button a:hover {
+    color: black;
+  }
+  .button:hover {
+    background-color: white;
+    transition: 0.3s;
+  }
+
+  /*artist site*/
+  .emil {
+    margin-left: 10%;
+  }
+
+  .artistsite {
+    font-size: 80px;
+  }
+}
