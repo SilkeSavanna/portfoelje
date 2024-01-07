@@ -66,10 +66,39 @@
                     processen, og i særdeleshed i kodningen, hvor JavaScript, herunder funktioner, metoder, events osv.
                     særligt viste sig at være fagligt udfordrende.
                 </p>
-
                 <p class="tekst">
                     <br>
+                    Forklaring på en del af JavaScript-koden for at illustrere nogle af de
+                    grundlæggende tendenser i spillet:
+                </p>
+                <p class="tekst">
+                    <br><strong>Pil 1:</strong> Mine ”Karen-figurer” får classen flyv, som er en defineret animation i
+                    css.
+                </p>
 
+                <p class="tekst">
+                    <br><strong>Pil 2:</strong> Herefter lytter siden efter 1 klik på en af de flyvende figurer, som
+                    herefter sender os videre til functionen ClickKaren.
+                </p>
+
+                <p class="tekst">
+                    <br><strong>Pil 3:</strong> Efterfølgende afspilles lydfilen, som er inkluderet i din HTML-fil.
+                    Point
+                    optjenes ved at trykke på Karen-figuren i mit spil. Efterfølgende fjernes event listeneren for klik,
+                    hvilket forhindrer yderligere pointoptjening ved gentagne klik på samme figur. Containeren i
+                    HTML-filen, fryser, og spriten får classen "forsvind" for at udløse animationen.
+
+                    Der lyttes herefter på afslutningen af animationen, og funktionen "GenstartKaren" aktiveres.
+
+                </p>
+
+                <p class="tekst">
+                    <br><strong>Pil 4</strong>
+                    I funktionen "GenstartKaren" fjernes alle klasser fra både container og sprite. Derefter tildeles
+                    figuren en ny position og forsinkelse, hvilket sikrer, at figurerne ikke overlapper hinanden.
+
+                    Klassen "flyv" tilføjes igen, og siden overvåger igen klik-hændelser og leder os tilbage til
+                    "ClickKaren". Dette skaber en cirkulær struktur, hvor spillet kan gentages i et kontinuerligt loop.
                 </p>
 
                 <button class="button">
@@ -79,10 +108,12 @@
 
             </div>
             <div>
-                <img class="video_site" src="img/boys copy.svg" alt="drenge fra spil">
-
+                <img class="javascript_1" class="web_projekt" src="img/javascript_1.webp" alt="billede af kode">
+                <img class="web_projekt" src="img/javascript_2.webp" alt="billede af kode">
             </div>
+
         </div>
+
         <div class="grid_web">
             <div>
                 <h2 class="info">/KOMPETENCER OPNÅET</h2>
@@ -97,9 +128,8 @@
                 </ul>
             </div>
             <div>
-
+                <img src="img/boys copy.svg" alt="drenge fra spil">
             </div>
-        </div>
     </main>
 
     <nav class="nav_projekter">

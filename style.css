@@ -100,6 +100,10 @@ img {
   font-size: 15px;
 }
 
+.stornav {
+  display: none;
+}
+
 /* nav {
   display: flex;
   justify-content: space-around;
@@ -123,6 +127,40 @@ a {
   text-decoration: dotted;
 }
 
+.overskrift {
+  font-size: 100px;
+  margin-left: 3%;
+  margin-bottom: 2%;
+}
+
+.p_forside {
+  margin-left: 5%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
+
+.container {
+  position: relative;
+}
+
+.puls_img {
+  width: 80%;
+  margin-left: 10%;
+  height: auto;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.07);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /*om side*/
 
 .silke_1 {
@@ -202,6 +240,11 @@ hr {
 
 .sprog {
   display: none;
+}
+
+.om_ul {
+  margin-bottom: 10%;
+  margin-left: 25%;
 }
 
 /*projekter side*/
@@ -321,8 +364,12 @@ ul {
   margin-bottom: 5%;
 }
 
-.stornav {
-  display: none;
+/*spil*/
+.javascript_1 {
+  margin-right: 1%;
+  margin-top: 5%;
+  width: 80%;
+  margin-bottom: 10%;
 }
 
 @media (min-width: 800px) {
@@ -412,6 +459,111 @@ ul {
   .links {
     font-size: 20px;
   }
+
+  /*index*/
+
+  .index_h2 {
+    margin-top: 10%;
+  }
+  .galleri_title {
+    cursor: pointer;
+    margin-top: 10%;
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .puls_img {
+    width: 50%;
+    margin-left: 20%;
+    height: auto;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.07);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .p_forside {
+    margin-left: 20%;
+    margin-right: 30%;
+    margin-bottom: 0%;
+  }
+
+  /* 
+  .billede_galleri {
+    display: none;
+    margin-top: 20px;
+  }
+
+  .billede_galleri img {
+    width: 200px;
+    margin: 5px;
+  }
+
+  .billede_elementer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .container_billede1 {
+    position: absolute;
+    width: 13%;
+    aspect-ratio: 7/5;
+    top: 65%;
+    left: 3%;
+  }
+
+  .billede_emil {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/emil_1.webp);
+    background-size: cover;
+  }
+
+  .container_billede2 {
+    position: absolute;
+    width: 15%;
+    aspect-ratio: 7/5;
+    top: 20%;
+    left: 70%;
+  }
+
+  .billede_boys {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/boys\ copy.svg);
+    background-size: cover;
+  }
+
+  .container_billede3 {
+    position: absolute;
+    width: 15%;
+    aspect-ratio: 7/5;
+    top: 20%;
+    left: 50%;
+  }
+
+  .billede_web {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/web_projekt.webp);
+    background-size: cover;
+  } */
 
   /*Om side*/
 
@@ -671,5 +823,16 @@ ul {
   /*RND*/
   .video_RND {
     width: 80%;
+  }
+
+  /*spil*/
+
+  .javascript_1 {
+    margin-top: 20%;
+    width: 580px;
+  }
+
+  .h2_spil {
+    margin-top: 10%;
   }
 }
