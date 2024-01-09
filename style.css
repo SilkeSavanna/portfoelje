@@ -137,7 +137,7 @@ nav a:hover {
 }
 
 strong {
-  font-weight: 800;
+  font-weight: bold;
 }
 /*forside*/
 
@@ -521,6 +521,9 @@ ul {
   margin-bottom: 10%;
 }
 @media (min-width: 800px) {
+  .font {
+    font-family: Arial, Helvetica, sans-serif;
+  }
   /*stor menu vises & burgermenu skjules*/
   .stornav {
     display: flex;
