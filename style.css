@@ -14,6 +14,8 @@ img {
   display: block;
 }
 
+/*burgermenu*/
+
 nav a.active {
   text-decoration: underline;
   color: white;
@@ -28,7 +30,6 @@ nav a.active {
 
 .nav-menu {
   display: flex;
-  /* justify-content: space-between; */
   gap: 60px;
 }
 
@@ -70,10 +71,8 @@ nav a.active {
 .nav-menu {
   position: absolute;
   left: -150%;
-  /* top: 70px; */
   gap: 1%;
   margin-top: -30px;
-  margin-bottom: 100px;
   margin-left: 0px;
   flex-direction: column;
   background-color: gray;
@@ -82,14 +81,7 @@ nav a.active {
   text-align: center;
   transition: 0.3s;
   z-index: -1;
-  /* min-height: 100vh; */
   padding-top: 120px;
-  /* color: black; */
-}
-
-.nav-item {
-  margin-top: 10%;
-  margin-bottom: 100px;
 }
 
 .nav_link {
@@ -103,6 +95,12 @@ nav a.active {
   left: 0;
   z-index: 1000;
 }
+
+.stornav {
+  display: none;
+}
+
+/*knapper på alle projektsiderne*/
 
 .button {
   background-color: black;
@@ -126,26 +124,11 @@ nav a.active {
   font-size: 15px;
 }
 
-.stornav {
-  display: none;
-}
-
-/* nav {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  margin-top: 2%;
-} */
-
 nav a:hover {
   text-decoration: underline;
   color: white;
 }
 
-.underside_overskrift {
-  font-size: 140px;
-  margin-left: 3%;
-}
 /*forside*/
 
 a {
@@ -165,10 +148,11 @@ a {
   margin-bottom: 10%;
 }
 
-.container {
+/* .container {
   position: relative;
-}
+} */
 
+/*puls effekt forside*/
 .puls_img {
   width: 80%;
   margin-left: 10%;
@@ -187,7 +171,18 @@ a {
     transform: scale(1);
   }
 }
+
+.container_billede1 {
+  position: absolute;
+  width: 30%;
+  aspect-ratio: 4/7;
+  top: 7%;
+  left: 50%;
+}
+
 /*om side*/
+
+/*billeder om side*/
 
 .silke_1 {
   display: block;
@@ -215,6 +210,7 @@ a {
   font-weight: 200;
   font-size: 30px;
   margin-top: 20%;
+  margin-bottom: 10%;
 }
 
 ul {
@@ -265,8 +261,80 @@ hr {
   margin-bottom: 5%;
 }
 
+.box1 {
+  width: 150px;
+  height: 30px;
+  border-style: solid;
+  border-color: white;
+  position: relative;
+  margin-bottom: 10%;
+}
+
+.box1::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.box2 {
+  width: 150px;
+  height: 30px;
+  border-style: solid;
+  border-color: white;
+  position: relative;
+  margin-bottom: 10%;
+}
+
+.box2::after {
+  content: "";
+  width: 80%;
+  height: 100%;
+  background-color: grey;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.box3 {
+  width: 150px;
+  height: 30px;
+  border-style: solid;
+  border-color: white;
+  position: relative;
+  margin-bottom: 10%;
+}
+
+.box3::after {
+  content: "";
+  width: 30%;
+  height: 100%;
+  background-color: grey;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.grid_box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
 .sprog {
-  display: none;
+  display: block;
+  margin-left: 40%;
+  margin-top: 4%;
+  font-family: Inter;
 }
 
 .om_ul {
@@ -286,15 +354,6 @@ h1 {
   margin-left: 10%;
   margin-top: 30%;
 }
-
-/* h2 {
-  color: white;
-  font-family: Inter;
-  font-weight: 100;
-  margin-left: 10%;
-  margin-top: 2%;
-  margin-bottom: 10%;
-} */
 
 .projekter_h2 {
   color: white;
@@ -400,6 +459,11 @@ ul {
 }
 
 .thissucks {
+  margin-left: 3%;
+}
+
+.underside_overskrift {
+  font-size: 140px;
   margin-left: 3%;
 }
 
@@ -546,20 +610,6 @@ ul {
 
   /*index*/
 
-  .index_h2 {
-    margin-top: 10%;
-  }
-  .galleri_title {
-    cursor: pointer;
-    margin-top: 10%;
-    width: 60%;
-    margin-left: 20%;
-  }
-
-  .container {
-    position: relative;
-  }
-
   .puls_img {
     width: 50%;
     margin-left: 20%;
@@ -585,85 +635,47 @@ ul {
     margin-bottom: 0%;
   }
 
-  /* 
-  .billede_galleri {
-    display: none;
-    margin-top: 20px;
-  }
-
-  .billede_galleri img {
-    width: 200px;
-    margin: 5px;
-  }
-
-  .billede_elementer {
+  .text-container {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: relative;
+    cursor: pointer;
     top: 0;
     left: 0;
   }
 
+  #hoverImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    display: none;
+  }
+
+  .hidden {
+    display: none;
+  }
+
   .container_billede1 {
     position: absolute;
-    width: 13%;
-    aspect-ratio: 7/5;
-    top: 65%;
-    left: 3%;
+    width: 18%;
+    aspect-ratio: 4/7;
+    top: 55%;
+    left: 65%;
   }
 
-  .billede_emil {
-    width: 100%;
-    height: 100%;
-    background-image: url(img/emil_1.webp);
-    background-size: cover;
+  .projekter_1 {
+    width: 40%;
+    margin-top: 5%;
+    margin-left: 20%;
+    pointer-events: auto;
+    cursor: pointer;
   }
-
-  .container_billede2 {
-    position: absolute;
-    width: 15%;
-    aspect-ratio: 7/5;
-    top: 20%;
-    left: 70%;
-  }
-
-  .billede_boys {
-    width: 100%;
-    height: 100%;
-    background-image: url(img/boys\ copy.svg);
-    background-size: cover;
-  }
-
-  .container_billede3 {
-    position: absolute;
-    width: 15%;
-    aspect-ratio: 7/5;
-    top: 20%;
-    left: 50%;
-  }
-
-  .billede_web {
-    width: 100%;
-    height: 100%;
-    background-image: url(img/web_projekt.webp);
-    background-size: cover;
-  } */
 
   /*Om side*/
 
-  ul {
-    text-decoration: none;
-    margin-top: 0%;
-    list-style-type: none;
-    margin-left: 20%;
-  }
-
-  li {
-    color: white;
-    font-family: Inter;
-    font-weight: 100;
-    margin-top: 0;
-  }
+  /*billeder på om*/
 
   .silke_1 {
     display: block;
@@ -689,6 +701,7 @@ ul {
     width: 25%;
   }
 
+  /*kompetencer tekst*/
   .kompetencer {
     color: white;
     text-align: left;
@@ -697,6 +710,22 @@ ul {
     margin-top: 20%;
     margin-left: 30%;
   }
+
+  ul {
+    text-decoration: none;
+    margin-top: 0%;
+    list-style-type: none;
+    margin-left: 20%;
+  }
+
+  li {
+    color: white;
+    font-family: Inter;
+    font-weight: 100;
+    margin-top: 0;
+  }
+
+  /* Sprog bokse*/
 
   .box1 {
     width: 200px;
@@ -757,6 +786,8 @@ ul {
     bottom: 0;
     left: 0;
   }
+
+  /*grid for kompetencer overskrift, bokse og ul*/
 
   .grid_om {
     display: grid;
@@ -822,20 +853,14 @@ ul {
   }
 
   .video {
-    /* min-width: 100%; */
     width: 480px;
     height: 270px;
-
-    /* width: 368px;
-    height: 268px;
-    margin-left: 10%; */
   }
 
   .video1 {
     width: 480px;
     height: 270px;
-    /* object-fit: cover;
-    width: 100%; */
+
     margin-left: 10%;
   }
 
@@ -860,7 +885,6 @@ ul {
   .grid_web {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* margin-top: 10%; */
   }
 
   .web_projekt {
