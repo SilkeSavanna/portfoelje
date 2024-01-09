@@ -11,20 +11,17 @@ hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
 
-Projekter1.classList.add("puls_img");
-
 document.addEventListener("DOMContentLoaded", function () {
   const textContainer = document.getElementById("textContainer");
   const hoverImage = document.getElementById("hoverImage");
 
-  if (textContainer && hoverImage) {
-    // Tjek om elementerne findes, før du tilføjer event listeners
-    textContainer.addEventListener("mouseover", () => {
-      hoverImage.style.display = "block";
-    });
+  textContainer.addEventListener("mouseover", () => {
+    hoverImage.style.display = "block";
+  });
 
-    textContainer.addEventListener("mouseout", () => {
-      hoverImage.style.display = "none";
-    });
-  }
+  Projekter1.classList.add("puls_img");
+
+  textContainer.addEventListener("mouseout", () => {
+    hoverImage.style.display = "none";
+  });
 });
